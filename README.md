@@ -31,6 +31,7 @@ You may need to install `jq` if you do not have it already installed in your she
         ./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com
         ```
          Note: Need to include `http://` or `https://`, no quotes necessary.
+    4. copy and paste the shareable link to easily share and collaborate
 ## Ouput and Sharing
 At the end of the script, two URLs are echoed back out:
 1. link to the check that was just created - need a Rigor login to view
@@ -63,7 +64,9 @@ At the end of the script, two URLs are echoed back out:
     ```
 4. many more - documented at https://monitoring-api.rigor.com/
 
-
-![Check Created](assets/threshold.png)
+![Check Created](assets/output.png)
+<p align="center">
+  <img width="552" height="300" src="assets/threshold.png">
+</p>
 
 
