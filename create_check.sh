@@ -29,7 +29,7 @@ data=$(jq -n --arg name_of_check "$name_of_check" --arg site_address "$site_addr
 {
     "name": $name_of_check,
     "tags": [
-        "aantonio"
+        "aantonio","home"
     ],
     
     "frequency": 5,
@@ -40,7 +40,7 @@ data=$(jq -n --arg name_of_check "$name_of_check" --arg site_address "$site_addr
         5,6,21,38    
     ],
     
-    "response_time_monitor_milliseconds": "4000",
+    "response_time_monitor_milliseconds": "5000",
     "http_request_headers": {
         "Content-Type": "text/html"
     },
