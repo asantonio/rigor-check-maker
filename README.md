@@ -4,7 +4,7 @@ Create and share a Rigor Real Browser check in seconds. Run the Bash script in y
 `./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com`
 
 <p align="center">
-  <img width="552" height="360" src="assets/checkmake.gif">
+  <img src="assets/checkmake.gif">
 </p>
 
 ## Prerequisites
@@ -66,7 +66,7 @@ At the end of the script, two URLs are echoed back out:
 
 ![Check Created](assets/output.png)
 <p align="center">
-  <img width="552" height="300" src="assets/threshold.png">
+  <img src="assets/threshold.png">
 </p>
 
 
