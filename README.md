@@ -1,11 +1,12 @@
 # Script to create Rigor Real Browser Checks
-Create and share a Rigor Real Browser check in seconds. Run the script in your terminal, specifying the name and site of the check, for example:  
+Create and share a Rigor Real Browser check in seconds. A bash script to create simple Rigor Real Browser checks. Run the script in your terminal, specifying 1) name of the check and 2) site url to check
 
 `./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com`
 
 <p align="center">
   <img width="552" height="360" src="assets/checkmake.gif">
 </p>
+
 ## Prerequisites
 You may need to install `jq` if you do not have it already installed in your shell. You can install via brew by running `brew install jq`
 
@@ -29,6 +30,7 @@ You may need to install `jq` if you do not have it already installed in your she
         ```
         ./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com
         ```
+         Note: Need to include `http://` or `https://`, no quotes necessary.
 ## Ouput and Sharing
 At the end of the script, two URLs are echoed back out:
 1. link to the check that was just created - need a Rigor login to view
@@ -54,11 +56,14 @@ At the end of the script, two URLs are echoed back out:
 2. `response time monitor`
     1. specify the acceptable response time threshold in milliseconds
 
-3. frequency
+3. `frequency`
     1. currently defaulted to every 5 minutes
     ```
     "frequency": 5,
     ```
 4. many more - documented at https://monitoring-api.rigor.com/
 
+
 ![Check Created](assets/threshold.png)
+
+
