@@ -14,7 +14,7 @@ rvmcurl() {
   local url
   url="https://monitoring-api.rigor.com/v2/${1#/}"
   shift || return # function should fail if we weren't passed at least one argument
-  curl -XPOST "${rvm_curl_args[@]}" "$url" "$@"
+  curl -sS -XPOST "${rvm_curl_args[@]}" "$url" "$@" 
 }
 
 rvm_curl_args=(
@@ -86,4 +86,5 @@ data=$(jq -n --arg name_of_check "$name_of_check" --arg site_address "$site_addr
     "wait_for_full_metrics": true
 }')
 
-rvmcurl checks/real_browsers/ -d "$data"
+check=$(rvmcurl checks/real_browsers/ -d "$data")
+echo $check
