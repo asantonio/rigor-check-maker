@@ -1,5 +1,5 @@
 # Script to create Rigor Real Browser Checks
-Create and share a Rigor Real Browser check in seconds. A bash script to create simple Rigor Real Browser checks. Run the script in your terminal, specifying 1) name of the check and 2) site url to check
+Create and share a Rigor Real Browser check in seconds. Run the Bash script in your terminal, specifying 1) name of the check and 2) site url to check. The script will create the check and return the URLs to view it as a logged in user and a publicly shareable version as well.
 
 `./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com`
 
