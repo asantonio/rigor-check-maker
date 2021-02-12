@@ -9,6 +9,8 @@ do
 done
 echo "Name: $name_of_check";
 echo "URL: $site_address";
+echo
+echo "Creating real browser check..."
 
 rvmcurl() {
   local url
@@ -88,3 +90,6 @@ data=$(jq -n --arg name_of_check "$name_of_check" --arg site_address "$site_addr
 
 check=$(rvmcurl checks/real_browsers/ -d "$data")
 echo $check
+echo
+echo $check  | jq '.links | "real browser check = \(.self_html)"'
+echo $check  | jq '.links | "shareable link = \(.self_html)"'
