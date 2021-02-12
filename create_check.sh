@@ -21,7 +21,7 @@ rvmcurl() {
 
 rvm_curl_args=(
   -H 'content-type:application/json' 
-  -H 'API-KEY:AKTprlwpWANb6ETjnkVL' 
+  -H 'API-KEY:<API_KEY>' 
 )
 
 #see locations.txt file for enums for the different real browser locations
@@ -29,7 +29,7 @@ data=$(jq -n --arg name_of_check "$name_of_check" --arg site_address "$site_addr
 {
     "name": $name_of_check,
     "tags": [
-        "aantonio","home"
+        "<MY-TAG1>","<MY-TAG2>"
     ],
     
     "frequency": 5,

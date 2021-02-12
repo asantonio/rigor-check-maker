@@ -19,7 +19,7 @@ You may need to install `jq` if you do not have it already installed in your she
             -H 'content-type:application/json' 
             -H 'API-KEY:MYAPIKEY' 
         ```
-    2. replace/add custom tags as desired in the &lt;MY_TAG&gt; section - comma separated.
+    2. *optional: add custom tags as desired in &lt;MY_TAG&gt; - comma separated.*
         ```
         "tags": [
             "aantonio","ecommerce"
