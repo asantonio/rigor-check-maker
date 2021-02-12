@@ -26,12 +26,12 @@ You may need to install `jq` if you do not have it already installed in your she
         ],
         ```
     
-    3. run the script 
-        ```
-        ./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com
-        ```
-         Note: Need to include `http://` or `https://`, no quotes necessary.
-    4. copy and paste the shareable link to easily share and collaborate
+3. run the script 
+    ```
+    ./create_check.sh --name "Splunk Home Page Test" --site https://www.splunk.com
+    ```
+        Note: Need to include `http://` or `https://`, no quotes necessary.
+4. copy and paste the shareable link to easily share and collaborate
 ## Ouput and Sharing
 At the end of the script, two URLs are echoed back out:
 1. link to the check that was just created - need a Rigor login to view
